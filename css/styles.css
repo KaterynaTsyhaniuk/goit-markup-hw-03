@@ -4,19 +4,56 @@ body {
   background-color: #ffffff;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 ol,
 ul {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 a {
   text-decoration: none;
 }
 
+section {
+  display: block;
+  padding: 120px 0;
+}
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ========= top line ========= */
 
 .top-line {
-  background-color: #ffffff;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.top-line > .container {
+  display: flex;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  margin-right: 332px;
 }
 
 .upper-logo {
@@ -37,35 +74,58 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2e2f42;
+  margin-right: 76px;
 }
+
+.list-nav-menu {
+  display: flex;
+  gap: 40px;
+}
+
 .nav-menu {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
+  display: block;
 }
-.address-menu {
+
+.address-container {
   font-style: normal;
+  display: flex;
+  margin-left: auto;
 }
-.address-info {
+
+.list-address-menu {
+  display: flex;
+  gap: 40px;
+}
+
+.address-menu {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  display: block;
+  padding: 24px 0;
 }
 .nav-menu:hover,
-:focus {
+.nav-menu:focus {
   color: #404bbf;
 }
-.address-info:hover,
-:focus {
+.address-menu:hover,
+.address-menu:focus {
   color: #404bbf;
 }
 
 /* ========= first section ========= */
+
 .first-section {
   background-color: #2e2f42;
+  padding: 188px 0;
+  text-align: center;
 }
 
 .page-title {
@@ -73,37 +133,47 @@ a {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+  max-width: 496px;
 }
 
 .first-section-button {
-  font-family: inherit;
   background-color: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
-  text-align: center;
   cursor: pointer;
+  display: block;
+  border: none;
+  margin: 0 auto;
+  font-style: normal;
+  border-radius: 4px;
+  min-width: 169px;
+  height: 56px;
+  padding: 16px 32px;
 }
 
 .first-section-button:hover,
-:focus {
+.first-section-button:focus {
   background-color: #404bbf;
 }
 
 /* ========= second section ========= */
 
-.page-title-second {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  text-align: center;
-
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
   color: #2e2f42;
 }
 .page-title-benefits {
