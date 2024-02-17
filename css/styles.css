@@ -75,6 +75,7 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .studio-logo {
@@ -85,7 +86,6 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2e2f42;
-  margin-right: 76px;
 }
 
 .list-nav-menu {
@@ -179,11 +179,12 @@ address {
   width: 1px;
   height: 1px;
   margin: -1px;
-  padding: 0;
-  overflow: hidden;
   border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  color: #2e2f42;
+  overflow: hidden;
 }
 
 .second-section-list {
